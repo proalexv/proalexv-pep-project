@@ -29,10 +29,11 @@ public class SocialMediaController{
         app.post("/messages" ,this::PostNewMessageHandler);
         app.post("/messages/{message_id}" ,this::GetMessagebyIDHandler);
         app.delete("/messages/{message_id}",this::DeleteMEssagebyIDHandler);
-        app.patch("messages/{message_id}",this::UpdatebyIDHandler);
+        app.patch("/messages/{message_id}",this::UpdatebyIDHandler);
         return app;
     }
-    private void PostRegisterHandler (Context ctx) throws JsonProcessingException{
+    private void PostRegisterHandler (Context ctx) throws JsonProcessingException
+    {
         ObjectMapper mapper = new ObjectMapper();
         Account Account = mapper.readValue(ctx.body(), Account.class);
          Account newAccount = accountService.addAccount(Account);
@@ -66,7 +67,7 @@ public class SocialMediaController{
     }
     }
     public void DeleteMEssagebyIDHandler(Context ctx) throws JsonProcessingException{
-        int message_id = Integer.parseInt(ctx.pathParm("message_id"));
+        int message_id = Integer.parseInt(ctx.pathParam("message_id"));
         if(message!=null){
         ctx.json(message);
         }else{
