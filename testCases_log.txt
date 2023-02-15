@@ -3,14 +3,6 @@
 [INFO] ----------------------< org.revature:Challenges >-----------------------
 [INFO] Building Challenges 1.1
 [INFO] --------------------------------[ jar ]---------------------------------
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M7/maven-surefire-plugin-3.0.0-M7.pom
-Progress (1): 2.7/7.2 kBProgress (1): 5.5/7.2 kBProgress (1): 7.2 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M7/maven-surefire-plugin-3.0.0-M7.pom (7.2 kB at 20 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.0.0-M7/surefire-3.0.0-M7.pom
-Progress (1): 2.7/22 kBProgress (1): 5.5/22 kBProgress (1): 8.2/22 kBProgress (1): 11/22 kB Progress (1): 14/22 kBProgress (1): 16/22 kBProgress (1): 19/22 kBProgress (1): 21/22 kBProgress (1): 22 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.0.0-M7/surefire-3.0.0-M7.pom (22 kB at 678 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/36/maven-parent-36.pom
-Progress (1): 4.1/45 kBProgress (1): 8.2/45 kBProgress (1): 12/45 kB Progress (1): 16/45 kBProgress (1): 20/45 kBProgress (1): 25/45 kBProgress (1): 29/45 kBProgress (1): 33/45 kBProgress (1): 37/45 kBProgress (1): 41/45 kBProgress (1): 45/45 kBProgress (1): 45 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/36/maven-parent-36.pom (45 kB at 583 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/26/apache-26.pom
-Progress (1): 4.1/21 kBProgress (1): 8.2/21 kBProgress (1): 12/21 kB Progress (1): 16/21 kBProgress (1): 20/21 kBProgress (1): 21 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/26/apache-26.pom (21 kB at 856 kB/s)
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Challenges ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
@@ -19,23 +11,95 @@ Progress (1): 4.1/21 kBProgress (1): 8.2/21 kBProgress (1): 12/21 kB Progress
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Challenges ---
 [INFO] Changes detected - recompiling the module!
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
-[INFO] Compiling 5 source files to /workspace/proalexv-pep-project/target/classes
+[INFO] Compiling 9 source files to /workspace/proalexv-pep-project/target/classes
 [INFO] -------------------------------------------------------------
 [ERROR] COMPILATION ERROR : 
 [INFO] -------------------------------------------------------------
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[53,1] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[60,5] class, interface, or enum expected
-[INFO] 2 errors 
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[56,5] 'try' without 'catch', 'finally' or resource declarations
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[75,4] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[75,24] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[78,5] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[80,22] <identifier> expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[45,57] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[48,6] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[48,20] <identifier> expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[50,12] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[54,9] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[57,9] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[66,106] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[64,5] 'try' without 'catch', 'finally' or resource declarations
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[78,5] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[78,25] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[82,5] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[85,8] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[87,9] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[90,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[91,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[92,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[93,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[94,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[95,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[100,17] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[101,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[107,1] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[109,5] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[142,56] illegal character: '\u201c'
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[142,67] illegal character: '\u201d'
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[142,57] not a statement
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[146,24] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[182,61] illegal character: '\u201c'
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[182,72] illegal character: '\u201d'
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[182,62] not a statement
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[51,6] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[51,34] <identifier> expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[51,42] <identifier> expected
+[INFO] 38 errors 
 [INFO] -------------------------------------------------------------
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.041 s
-[INFO] Finished at: 2023-02-07T03:35:21Z
+[INFO] Total time:  1.751 s
+[INFO] Finished at: 2023-02-15T18:25:27Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Challenges: Compilation failure: Compilation failure: 
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[53,1] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[60,5] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[56,5] 'try' without 'catch', 'finally' or resource declarations
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[75,4] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[75,24] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[78,5] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[80,22] <identifier> expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[45,57] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[48,6] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[48,20] <identifier> expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[50,12] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[54,9] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[57,9] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[66,106] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[64,5] 'try' without 'catch', 'finally' or resource declarations
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[78,5] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[78,25] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[82,5] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[85,8] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[87,9] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[90,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[91,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[92,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[93,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[94,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[95,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[100,17] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[101,13] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[107,1] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[109,5] class, interface, or enum expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[142,56] illegal character: '\u201c'
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[142,67] illegal character: '\u201d'
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[142,57] not a statement
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[146,24] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[182,61] illegal character: '\u201c'
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[182,72] illegal character: '\u201d'
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[182,62] not a statement
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[51,6] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[51,34] <identifier> expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[51,42] <identifier> expected
 [ERROR] -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
