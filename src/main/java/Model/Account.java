@@ -114,4 +114,7 @@ public class Account {
                 ", password='" + password + '\'' +
                 '}';
     }
+    public Account addAccount(Account username2) {
+        return null;
+    }
 }
