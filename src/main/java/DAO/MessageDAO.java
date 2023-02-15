@@ -104,6 +104,7 @@ try{
     String sql = "SELECT * FROM message WHERE message_id =?;";
     preparedStatment.setInt(1,id);
 
+
 ResultSet rs = preparedStatement.executeQuery();
 while(rs.next()){
     Message message = new Message()

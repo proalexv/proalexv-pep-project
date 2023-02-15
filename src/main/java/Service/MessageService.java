@@ -2,6 +2,8 @@ package Service;
 
 import static org.mockito.ArgumentMatchers.nullable;
 
+import java.util.List;
+
 import DAO.MessageDAO;
 import Model.Message;
 
@@ -22,7 +24,7 @@ public class MessageService {
     public MessageService(){
         messageDAO = new MessageDAO();
     }
-        Public MessageService(MessageDAO messageDAO)
+        public MessageService(MessageDAO messageDAO)
         {
             this.messageDAO = messageDAO;
         }
@@ -36,14 +38,14 @@ public class MessageService {
 return messageDAO.GetAllMessages();
     }
     public Message getMessageById(int message_id){
-        if(messageDAO.getMessageeById(message_id)!= null){
+        if(messageDAO.getMessageById(message_id)!= null){
             return messageDAO.getMessageById(message_id);
         }
         return null;
     }
     public Message deletebyid(int message_id){
         Message message = messageDAO.getMessageById(message_id);
-        messageDAO.DeleteMEssagebyID(message_id);
+        messageDAO.DeleteMessaagebyId(message_id);
         if(message ==null){
         return null;
     } 
