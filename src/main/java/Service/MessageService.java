@@ -53,7 +53,7 @@ return messageDAO.GetAllMessages();
 public Message updateMessages(int message_id,Message message){
     if(messageDAO.getMessageById(message_id) != null)
     {
-        return messageDAO.UPdatebyId(message_id,message);
+        return messageDAO.UpdatebyId(message_id,message);
  
    }
    return null;
