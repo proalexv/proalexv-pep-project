@@ -11,9 +11,62 @@ import java.sql.Statement;
 import org.h2.command.Prepared;
 
 
+public class AccountDAO{
+    public Account CreateNewUsers(Account account){
+    Connection connection = ConnectionUtil.getConnection();
+    try{
+    String sql = "INSERT INTO account (username,password) VALUES (?,?)";
+    PreparedStatement preparedStatment = connection.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);
+    
+    preparedStatment.setString(1,account.getUsername());
+    preparedStatment.setString(2,account.getPassword());
+    preparedStatment.executeUpdate();
+    ResultSet pkeyResultSet = preparedStatment.getGeneratedKeys();
+    
+    if(pkeyResultSet.next()){
+    int generated_account_id = (int) pkeyResultSet.getLong(1);
+    return new Account(generated_account_id,account.getUsername(),account.getPassword());
+    }
+    }
+    
+    catch(SQLException e)
+    {
+    System.out.println(e.getMessage());
+    }
+    return null;
+    }
+    
+public Account ProcessUserLogings(String username, String password){
+        Connection connection = ConnectionUtil.getConnection();
+        try
+        {
+            String sql = "SELECT * FROM account WHERE username = ? AND password = ?";
+            PreparedStatement preparedStatment = connection.prepareStatement(sql);
+            preparedStatment.setString(1,username);
+            preparedStatment.setString(2,password);
+            System.out.println(username+password);
+            ResultSet rs= preparedStatment.executeQuery();
+            while(rs.next())
+            {
+                Account account = new Account(rs.getInt("account_id"),
+                rs.getString("username"),
+                rs.getString("password"));
+                return account;
+            }
+        }
+        catch(SQLException e)
+{
+
+    System.out.println(e.getMessage());
+}
+return null;
+    }
+
+    
 
 
-/**
+
+/** ignore me
  * A DAO is a class that mediates the transformation of data between the format of objects in Java to rows in a
  * database. The methods here are mostly filled out, you will just need to add a SQL statement.
  *
@@ -56,57 +109,3 @@ import org.h2.command.Prepared;
 }
 
 */
-
-
-public class AccountDAO{
-    public Account CreateNewUsers(Account account){
-    Connection connection = ConnectionUtil.getConnection();
-    try{
-    String sql = "INSERT INTO account (username,password) VALUES (?,?)";
-    PreparedStatement preparedStatment = connection.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS)
-    
-    preparedStatment.setString(1,account.getUsername());
-    preparedStatment.setString(2,account.getPassword());
-    preparedStatment.executeUpdate();
-    ResultSet pkeyResultSet = preparedStatment.getGeneratedKeys();
-    
-    if(pkeyResultSet.next()){
-    int generated_account_id = (int) pkeyResultSet.getLong(1);
-    return new Account(generated_account_id,account.getUsername(),account.getPassword());};
-    }
-    }
-    catch(SQLException e)
-    {
-    System.out.println(e.getMessage());
-    }
-    return null;
-    }
-    
-public Account ProcessUserLogings(String username, String password){
-        Connection connection = ConnectionUtil.getConnection();
-        try
-        {
-            String sql = "SELECT * FROM account WHERE username = ? AND password = ?";
-            PreparedStatement preparedStatment = connection.prepareStatement(sql);
-            preparedStatment.setString(1,username);
-            preparedStatment.setString(2,password);
-            System.out.println(username+password);
-            ResultSet rs= preparedStatment.executeQuery();
-            while(rs.next())
-            {
-                Account account = new Account(rs.getInt("account_id"),
-                rs.getString("username"),
-                rs.getString("password"));
-                return account;
-            }
-        }
-        catch(SQLException e)
-{
-
-    System.out.println(e.getMessage());
-}
-return null;
-    }
-
-    
-

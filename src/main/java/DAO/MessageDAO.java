@@ -54,6 +54,7 @@ public class MessageDAO{
     public Message InsertNewMessages(Message message){
     Connection connection = ConnectionUtil.getConnection();
     try{
+
    String sql = "INSERT INTO message (posted_by, message_text, time_posted_epoch) VALUES(?,?,?)";
     
     
@@ -118,6 +119,8 @@ System.out.println(e.getMessage());
 }
 return null;
 }
+
+
 public Message DeleteMessaagebyId(int message_id){
     Connection Connection = ConnectionUtil.getConnection();
     try{

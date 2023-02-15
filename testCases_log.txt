@@ -15,91 +15,39 @@
 [INFO] -------------------------------------------------------------
 [ERROR] COMPILATION ERROR : 
 [INFO] -------------------------------------------------------------
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[56,5] 'try' without 'catch', 'finally' or resource declarations
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[75,4] illegal start of type
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[75,24] ';' expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[78,5] illegal start of type
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[80,22] <identifier> expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[45,57] ';' expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[48,6] illegal start of type
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[48,20] <identifier> expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[50,12] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[54,9] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[57,9] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[66,106] ';' expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[64,5] 'try' without 'catch', 'finally' or resource declarations
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[78,5] illegal start of type
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[78,25] ';' expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[82,5] illegal start of type
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[85,8] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[87,9] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[90,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[91,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[92,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[93,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[94,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[95,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[100,17] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[101,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[107,1] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[109,5] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[142,56] illegal character: '\u201c'
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[142,67] illegal character: '\u201d'
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[142,57] not a statement
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[146,24] ';' expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[182,61] illegal character: '\u201c'
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[182,72] illegal character: '\u201d'
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[182,62] not a statement
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[51,6] illegal start of type
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[51,34] <identifier> expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[51,42] <identifier> expected
-[INFO] 38 errors 
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[90,23] ')' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[91,26] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[92,23] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[109,36] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[110,28] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[111,27] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[112,33] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[113,35] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[63,6] reached end of file while parsing
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[35,6] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[35,34] <identifier> expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[35,42] <identifier> expected
+[INFO] 12 errors 
 [INFO] -------------------------------------------------------------
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.751 s
-[INFO] Finished at: 2023-02-15T18:25:27Z
+[INFO] Total time:  3.224 s
+[INFO] Finished at: 2023-02-15T20:02:01Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Challenges: Compilation failure: Compilation failure: 
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[56,5] 'try' without 'catch', 'finally' or resource declarations
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[75,4] illegal start of type
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[75,24] ';' expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[78,5] illegal start of type
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[80,22] <identifier> expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[45,57] ';' expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[48,6] illegal start of type
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[48,20] <identifier> expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[50,12] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[54,9] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/MessageService.java:[57,9] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[66,106] ';' expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[64,5] 'try' without 'catch', 'finally' or resource declarations
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[78,5] illegal start of type
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[78,25] ';' expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[82,5] illegal start of type
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[85,8] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[87,9] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[90,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[91,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[92,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[93,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[94,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[95,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[100,17] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[101,13] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[107,1] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[109,5] class, interface, or enum expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[142,56] illegal character: '\u201c'
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[142,67] illegal character: '\u201d'
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[142,57] not a statement
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[146,24] ';' expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[182,61] illegal character: '\u201c'
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[182,72] illegal character: '\u201d'
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Controller/SocialMediaController.java:[182,62] not a statement
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[51,6] illegal start of type
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[51,34] <identifier> expected
-[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[51,42] <identifier> expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[90,23] ')' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[91,26] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[92,23] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[109,36] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[110,28] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[111,27] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[112,33] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/MessageDAO.java:[113,35] ';' expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/DAO/AccountDAO.java:[63,6] reached end of file while parsing
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[35,6] illegal start of type
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[35,34] <identifier> expected
+[ERROR] /workspace/proalexv-pep-project/src/main/java/Service/AccountService.java:[35,42] <identifier> expected
 [ERROR] -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.

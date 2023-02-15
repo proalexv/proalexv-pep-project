@@ -2,6 +2,7 @@ package Service;
 
 import DAO.AccountDAO;
 import Model.Account;
+import java.util.List;
 
 /**
  * The purpose of a Service class is to contain "business logic" that sits between the web layer (controller) and
@@ -15,39 +16,21 @@ import Model.Account;
  */
 public class AccountService extends Account{
      private AccountDAO accountDAO;
-    /**
-     * no-args constructor for creating a new AccountService with a new AccountDAO.
-     * There is no need to change this constructor.
-     */
+   
     public AccountService(){
         accountDAO = new AccountDAO();
     }
-    /**
-     * Constructor for a AccountService when AccountDAO is provided.
-     * This is used for when a mock AccountDAO that exhibits mock behavior is used in the test cases.
-     * This would allow the testing of AccountService independently of AccountDAO.
-     * There is no need to modify this constructor.
-     * @param accountDAO
-     */
     public AccountService(AccountDAO accountDAO){
         this.accountDAO = accountDAO;
     }
-    /**
-     * TODO: Use the Account DAO to persist an account. The given Account will not have an id provided.
-     *
-     * @param account an account object.
-     * @return The persisted account if the persistence is successful.
-     */
     public Account addAccount(Account account) {
-       if(account.username != ""
-        && account.password.length() >= 4){
-            return AccountDAO.CreateNewUsers(account);
-        }
+       if(account.username != "" && account.password.length() >= 4){
+            return accountDAO.CreateNewUsers(account);
+    }
         return null;
     }
-    public Account POstLogins(String username, String passweord){
-        return accountDAO.ProcessUserLogings(username,password);
+    public Account PostLogins(String username, String password){
+        return accountDAO.ProcessUserLogings(username, password);
     }
      return accountDAO.addAccount(account);
     }
-

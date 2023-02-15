@@ -15,22 +15,17 @@ import Model.Message;
  * application that follows best practices will often have unnecessary code, but this makes the code more
  * readable and maintainable in the long run!
  */
+
 public class MessageService {
-     MessageDAO messageDAO = new MessageDAO();
-    /**
-     * no-args constructor for creating a new AccountService with a new AccountDAO.
-     * There is no need to change this constructor.
-     */
-    public MessageService( MessageDAO messageDAO){
-        this.messageDAO = messageDAO();
+    public MessageDAO messageDAO;
+    
+    public MessageService(){
+        messageDAO = new MessageDAO();
     }
-    /**
-     * Constructor for a AccountService when AccountDAO is provided.
-     * This is used for when a mock AccountDAO that exhibits mock behavior is used in the test cases.
-     * This would allow the testing of AccountService independently of AccountDAO.
-     * There is no need to modify this constructor.
-     * @param messageDAO
-     */
+        Public MessageService(MessageDAO messageDAO)
+        {
+            this.messageDAO = messageDAO;
+        }
     public Message InsertNewMessage(Message message){
     if (message.getMessage_text() ==""){
         return null;
@@ -41,18 +36,26 @@ public class MessageService {
 return messageDAO.GetAllMessages();
     }
     public Message getMessageById(int message_id){
-        if(messageDAO.getMessageById(message_id)!= null){
-            return messageDAO.getMessageById(message_id):
+        if(messageDAO.getMessageeById(message_id)!= null){
+            return messageDAO.getMessageById(message_id);
         }
         return null;
-    }return message;
     }
-    public MEssage updateMessages(int mesage_id, Message message){
-        if(messageDAO.getMessageById(message_id) != null)
-        {
-return messageDAO.UpdatebyId(message_id,message);
-        }
+    public Message deletebyid(int message_id){
+        Message message = messageDAO.getMessageById(message_id);
+        messageDAO.DeleteMEssagebyID(message_id);
+        if(message ==null){
         return null;
+    } 
+    return message;
+}
 
-        }
-    }
+public Message updateMessages(int message_id,Message message){
+    if(messageDAO.getMessageById(message_id) != null)
+    {
+        return messageDAO.UPdatebyId(message_id,message);
+ 
+   }
+   return null;
+}
+}   
