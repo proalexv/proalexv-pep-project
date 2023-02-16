@@ -25,8 +25,8 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running AuthIntegrationTest
-[ERROR] Tests run: 14, Failures: 0, Errors: 14, Skipped: 0, Time elapsed: 0.332 s <<< FAILURE! - in AuthIntegrationTest
-[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.272 s  <<< ERROR!
+[ERROR] Tests run: 14, Failures: 0, Errors: 14, Skipped: 0, Time elapsed: 0.414 s <<< FAILURE! - in AuthIntegrationTest
+[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.339 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -46,9 +46,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
@@ -94,7 +99,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.272 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.339 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -138,7 +143,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -158,9 +163,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
@@ -206,7 +216,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -250,7 +260,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0.014 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0.024 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -270,9 +280,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
@@ -318,7 +333,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0.014 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0.025 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -382,9 +397,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
@@ -474,7 +494,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.007 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.009 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -494,9 +514,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
@@ -542,7 +567,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.007 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.009 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -606,9 +631,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
@@ -718,9 +748,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
@@ -811,7 +846,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
 [INFO] Running MessagingIntegrationTest
-[ERROR] Tests run: 40, Failures: 0, Errors: 40, Skipped: 0, Time elapsed: 0.125 s <<< FAILURE! - in MessagingIntegrationTest
+[ERROR] Tests run: 40, Failures: 0, Errors: 40, Skipped: 0, Time elapsed: 0.179 s <<< FAILURE! - in MessagingIntegrationTest
 [ERROR] MessagingIntegrationTest.postAccountAndMessageThenGetMessageTest  Time elapsed: 0 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
@@ -832,9 +867,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -944,9 +984,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -1056,9 +1101,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -1168,9 +1218,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -1280,9 +1335,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -1392,9 +1452,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -1484,7 +1549,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0.003 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -1504,9 +1569,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -1552,7 +1622,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0.003 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1596,7 +1666,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest  Time elapsed: 0.065 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -1616,9 +1686,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -1664,7 +1739,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest  Time elapsed: 0.066 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1728,9 +1803,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -1840,9 +1920,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -1932,7 +2017,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.026 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -1952,9 +2037,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -2000,7 +2090,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.007 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.026 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2044,7 +2134,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.061 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -2064,9 +2154,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -2112,7 +2207,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.061 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2176,9 +2271,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -2224,7 +2324,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.deletedMessageShouldNotExistTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.deletedMessageShouldNotExistTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2268,7 +2368,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -2288,9 +2388,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -2336,7 +2441,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2380,7 +2485,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageNonExistentMessageTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageNonExistentMessageTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -2400,9 +2505,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -2448,7 +2558,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageNonExistentMessageTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageNonExistentMessageTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2492,7 +2602,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesTest  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -2512,9 +2622,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -2560,7 +2675,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesTest  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2604,7 +2719,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -2624,9 +2739,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -2671,7 +2791,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
@@ -2714,7 +2834,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndMessageTest  Time elapsed: 0.003 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndMessageTest  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -2734,9 +2854,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -2781,7 +2906,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndMessageTest  Time elapsed: 0.003 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndMessageTest  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
@@ -2824,7 +2949,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.003 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.022 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -2844,9 +2969,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -2891,7 +3021,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.022 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
@@ -2934,7 +3064,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest  Time elapsed: 0.003 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The nested type SocialMediaController cannot hide an enclosing type
@@ -2954,9 +3084,14 @@ Unresolved compilation problems:
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 	at Controller.SocialMediaController.<init>(SocialMediaController.java:25)
 	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
@@ -3001,7 +3136,7 @@ Unresolved compilation problems:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest  Time elapsed: 0.003 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
@@ -3067,9 +3202,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
@@ -3092,9 +3232,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
@@ -3117,9 +3262,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
@@ -3142,9 +3292,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
@@ -3167,9 +3322,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
@@ -3192,9 +3352,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
@@ -3217,9 +3382,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
@@ -3242,9 +3412,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3267,9 +3442,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3292,9 +3472,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3317,9 +3502,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3342,9 +3532,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3367,9 +3562,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3392,9 +3592,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3417,9 +3622,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3442,9 +3652,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3467,9 +3682,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3492,9 +3712,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3517,9 +3742,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3542,9 +3772,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3567,9 +3802,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3592,9 +3832,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3617,9 +3862,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3642,9 +3892,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3667,9 +3922,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3692,9 +3952,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3717,9 +3982,14 @@ java.lang.NullPointerException
 	The method get(String, Handler) in the type Javalin is not applicable for the arguments (String, this::getMessagesByAccountIDHandler)
 	The type SocialMediaController does not define getMessagesByAccountIDHandler(Context) that is applicable here
 	om cannot be resolved
+	The method PostLogins(String, String) is undefined for the type AccountService
+	The method InsertNewMessage(Message) is undefined for the type MessageService
+	The method getMessageById(int) is undefined for the type MessageService
+	The method deletebyid(int) is undefined for the type MessageService
 	context cannot be resolved to a type
 	The method GetMessagesbyAccountId(int) is undefined for the type MessageService
 	context cannot be resolved to a type
+	The method updateMessages(int, Message) is undefined for the type MessageService
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -3729,8 +3999,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  6.073 s
-[INFO] Finished at: 2023-02-15T22:28:29Z
+[INFO] Total time:  4.468 s
+[INFO] Finished at: 2023-02-16T00:20:46Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M7:test (default-test) on project Challenges: 
 [ERROR] 
