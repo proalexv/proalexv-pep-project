@@ -1,22 +1,13 @@
 package Service;
 
 import static org.mockito.ArgumentMatchers.nullable;
-
+import Model.Message;
 import java.util.List;
 
 import DAO.MessageDAO;
 import Model.Message;
 
-/**
- * The purpose of a Service class is to contain "business logic" that sits between the web layer (controller) and
- * persistence layer (DAO). That means that the Service class performs tasks that aren't done through the web or
- * SQL: programming tasks like checking that the input is valid, conducting additional security checks, or saving the
- * actions undertaken by the API to a logging file.
- *
- * It's perfectly normal to have Service methods that only contain a single line that calls a DAO method. An
- * application that follows best practices will often have unnecessary code, but this makes the code more
- * readable and maintainable in the long run!
- */
+
 
 public class MessageService {
     public MessageDAO messageDAO;
@@ -28,36 +19,42 @@ public class MessageService {
         {
             this.messageDAO = messageDAO;
         }
-    public Message InsertNewMessage(Message message){
-    if (message.getMessage_text() ==""){
-        return null;
-    }
-    return messageDAO.InsertNewMessages(message);
-    }
+   
     public List<Message>getAllMessage(){
-return messageDAO.GetAllMessages();
+return messageDAO.getAllMessages();
     }
-    public Message getMessageById(int message_id){
-        if(messageDAO.getMessageById(message_id)!= null){
-            return messageDAO.getMessageById(message_id);
+    public Message createMessage(Message message){
+        String message_text = message.getMessage_text();
+        //error?
+        if(message_text.isBlank()&& message_text.length() < 255){
+            return messageDAO.createMessage(message);
+        } else{
+            return null;
         }
-        return null;
     }
-    public Message deletebyid(int message_id){
-        Message message = messageDAO.getMessageById(message_id);
-        messageDAO.DeleteMessaagebyId(message_id);
-        if(message ==null){
-        return null;
+    public Message getMessageByID(int message_id){
+        return messageDAO.getMessageById(message_id);
     } 
-    return message;
-}
+    
+    public Message deleteMessageById(int message_id){
+        Message messageFromDB = this.messageDAO.getMessageByID(message_id);
+        messageDAO.deleteMessageByID(message_id);
+        if(messageFromDB==null){
+            return null;
+        }return messageFromDB;
+    }
 
-public Message updateMessages(int message_id,Message message){
+public Message updateMessageByID(MEssage message,int message_id){
     if(messageDAO.getMessageById(message_id) != null)
     {
-        return messageDAO.UpdatebyId(message_id,message);
- 
+        return messageDAO.updateMessageByID(message, message_id);
+
    }
    return null;
 }
+
+public List<Message> getMessagesByAccountID(int posted_by){
+    return messageDAO.getMessagesByAccountID(posted_by);
+}
+
 }   
