@@ -8,17 +8,19 @@ public class AccountDAO{
     public Account registerAccount(Account account){
     Connection connection = ConnectionUtil.getConnection();
     try{
-    String sql = "INSERT INTO account (username,password) VALUES (?,?)";
+    String sql = "INSERT INTO account (username, password) VALUES (?,?)";
     PreparedStatement preparedStatment = connection.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);
     
     preparedStatment.setString(1,account.getUsername());
     preparedStatment.setString(2,account.getPassword());
     preparedStatment.executeUpdate();
-    ResultSet rs = preparedStatement.getGeneratedKeys();
+    
+    ResultSet rs =  preparedStatment.getGeneratedKeys();
     
     if(rs.next()){
-    int generated_account_id = (int) rs.getLong(1)
-    return new Account(generated_account_id,account.getUsername(),account.getPassword());
+    int generated_account_id = (int) rs.getLong(1);
+    return new Account(
+        generated_account_id,account.getUsername(),account.getPassword());
     }
 }
 catch(SQLException e){

@@ -1,5 +1,4 @@
 package DAO;
-import java.util.ArraryList;
 import java.util.ArrayList;
 import java.util.List;
 import Model.Message;
@@ -9,18 +8,18 @@ import java.sql.*;
 public class MessageDAO{
     public List<Message> getAllMessages(){
     Connection connection = ConnectionUtil.getConnection();
-    List<Message> messages = new ArraryList<>();
+    List<Message> messages = new ArrayList<>();
 
     try{
 
-   String sql = "SELECT * FROM message"
+   String sql = "SELECT * FROM message";
     
     
-    PreparedStatement preparedStatment = connection.prepareStatement(sql);
+    PreparedStatement preparedStatement = connection.prepareStatement(sql);
     
    ResultSet rs = preparedStatement.executeQuery();
    while(rs.next()){
-    Message message = new Message()(
+    Message message = new Message(
     rs.getInt("message_id"),
     rs.getInt("posted_by"),
     rs.getString("message_text"),
@@ -44,9 +43,9 @@ return messages;
             preparedStatement.setLong(3,message.getTime_posted_epoch());
 
             preparedStatement.executeUpdate();
-            ResultSet rs = preparedStatement.getGeneratedKeys();\
+            ResultSet rs = preparedStatement.getGeneratedKeys();
             if(rs.next()){
-                int generated_account_id = (int) rs.getLong(1);
+                int generated_message_id = (int) rs.getLong(1);
                 return new Message(
                 generated_message_id,
                 message.getPosted_by(),
@@ -62,11 +61,11 @@ return messages;
     }
 
     public Message getMessageById(int id){
-        Connection connection = ConnectionUtil.getConnection;
+        Connection connection = ConnectionUtil.getConnection();
         try{
             String sql = "SELECT * FROM message WHERE message_id =?;";
           PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setInt(1, generated_message_id);
+            preparedStatement.setInt(1, id);
         
         ResultSet rs = preparedStatement.executeQuery();
         while(rs.next()){
@@ -88,7 +87,7 @@ return messages;
             Connection Connection = ConnectionUtil.getConnection();
             try{
                 String sql = "DELETE FROM message where message_id = ?;";
-                PreparedStatement preparedStatement = connection.preparedStatement(sql);
+                PreparedStatement preparedStatement = Connection.prepareStatement(sql);
 
 
                 preparedStatement.setInt(1, message_id);
@@ -120,7 +119,7 @@ return messages;
                         rs.getInt("posted_by"),
                         rs.getString("message_text"),
                         rs.getInt("time_posted_epoch"));
-                        message.add(message);
+                        messages.add(message);
                 }
                 }catch(SQLException e){
                     System.out.println(e.getMessage());
@@ -147,8 +146,8 @@ return messages;
 
 
 
-
-        ignore mememememmemme 
+/* 
+        ignore memem/*ememmemme 
     if(pkeyResultSet.next()){
     int generated_message_id = (int) pkeyResultSet.getLong(1);
     return new Message(generated_message_id,message.getPosted_by(),message.getMessage_text(),message.getTime_posted_epoch());}

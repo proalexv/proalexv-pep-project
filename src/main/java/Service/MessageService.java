@@ -6,11 +6,12 @@ import java.util.List;
 
 import DAO.MessageDAO;
 import Model.Message;
+import DAO.MessageDAO;
 
 
 
 public class MessageService {
-    public MessageDAO messageDAO;
+    private MessageDAO messageDAO;
     
     public MessageService(){
         messageDAO = new MessageDAO();
@@ -23,10 +24,12 @@ public class MessageService {
     public List<Message>getAllMessage(){
 return messageDAO.getAllMessages();
     }
+
+
     public Message createMessage(Message message){
         String message_text = message.getMessage_text();
-        //error?
-        if(message_text.isBlank()&& message_text.length() < 255){
+        //
+        if(!message_text.isBlank() && message_text.length() < 255){
             return messageDAO.createMessage(message);
         } else{
             return null;
@@ -37,17 +40,17 @@ return messageDAO.getAllMessages();
     } 
     
     public Message deleteMessageById(int message_id){
-        Message messageFromDB = this.messageDAO.getMessageByID(message_id);
-        messageDAO.deleteMessageByID(message_id);
+        Message messageFromDB = this.messageDAO.getMessageById(message_id);
+        messageDAO.deleteMessaagebyId(message_id);
         if(messageFromDB==null){
             return null;
         }return messageFromDB;
     }
 
-public Message updateMessageByID(MEssage message,int message_id){
+public Message updateMessageByID(Message message,int message_id){
     if(messageDAO.getMessageById(message_id) != null)
     {
-        return messageDAO.updateMessageByID(message, message_id);
+        //return messageDAO.updateMessageByID(message, message_id);
 
    }
    return null;
