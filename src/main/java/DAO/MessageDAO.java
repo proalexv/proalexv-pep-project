@@ -103,6 +103,29 @@ return messages;
         }return null;
         }
 
+
+        public Message updateMessageById(Message message,int message_id){
+            Connection connection = ConnectionUtil.getConnection();
+            try{
+                String sql = "UPDATE message SET message_text =? WHERE message_id = ?";
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                
+                preparedStatement.setString(1, message.getMessage_text());
+                preparedStatement.setInt(2,message_id);
+
+                preparedStatement.executeUpdate();
+                return getMessageById(message_id);
+            }catch(SQLException e){
+                System.out.println(e.getMessage());
+            }
+            return null;
+
+        }
+
+
+
+
+
         public List<Message> getMessagesByAccountID(int posted_by){
             Connection connection = ConnectionUtil.getConnection();
             List<Message> messages = new ArrayList<>();

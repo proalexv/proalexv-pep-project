@@ -1,7 +1,7 @@
-commit 9f6633ca7657dfa4f7737cc8e9a19625abe561e0
+commit e0282ce6c4c241abac118529e09b6afead51bb21
 Author: Alejandro Rodriguez <avidleader13@gmail.com>
-Date:   Thu Feb 16 01:22:09 2023 +0000
+Date:   Thu Feb 16 02:34:45 2023 +0000
 
-    522
+    almost finished version :)
 
- 3 files changed, 448 insertions(+), 91 deletions(-)
+ 6 files changed, 143 insertions(+), 129 deletions(-)

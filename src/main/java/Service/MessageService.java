@@ -50,7 +50,7 @@ return messageDAO.getAllMessages();
 public Message updateMessageByID(Message message,int message_id){
     if(messageDAO.getMessageById(message_id) != null)
     {
-        //return messageDAO.updateMessageByID(message, message_id);
+        return messageDAO.updateMessageById(message, message_id);
 
    }
    return null;
